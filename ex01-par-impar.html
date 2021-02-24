@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de documento HTML</title>
+    <script>
+        // 'use strict' impede que variáveis sejam declaradas
+        // sem o uso de let, var ou const
+        // Inicializar variáveis diretamente é má prática de
+        // programação
+        'use strict'
+
+        /*
+            Peça ao usuário para informar um número, usando
+            prompt(). Determine se o número digitado é par
+            ou ímpar e informe ao usuário usando alert().
+        */
+        
+         let rasp = parseInt(prompt('Informe um numero :'))
+
+        if(isNaN(rasp)){ //O resultado da conversão foi NaN?
+            alert('Desculpe-me, mais isso que você informou não é um numero.')
+        }else if(rasp %2 == 0){
+            alert('Numero PAR')
+        
+        }else{
+            alert('Numero impar')
+        }
+
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
