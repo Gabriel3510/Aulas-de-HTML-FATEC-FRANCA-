@@ -22,6 +22,20 @@
             7! = 7 * 6 * 5 * 4 * 3 * 2 * 1         
         */
 
+        let num, total = 1
+
+        do {
+            num = parseInt(prompt('Digite um número: '))
+        } while (isNaN(num) || num < 1)
+
+        for (let i = num; i > 0; i--) {
+            document.write(`${total} * ${i} <br>`)
+            total *= i
+        }
+        
+        document.write(`O total da fatoração do número ${num} é ${total}.`)
+
+
     </script>
 </head>
 <body>
