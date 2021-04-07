@@ -12,15 +12,16 @@
         'use strict'
         
         /*
-            Peça ao usuário que informe um número inteiro maior que 1 e
-            implemente um for que calcule o valor do fatorial dele,
-            começando o cálculo pelo próprio número e terminando em 1.
-            
-            Exemplos:
-            
-            5! = 5 * 4 * 3 * 2 * 1
-            7! = 7 * 6 * 5 * 4 * 3 * 2 * 1         
+            Implemente um loop for que, começando em 3, indo até 1000, e
+            avançando de 3 em 3, imprima com document.write() apenas os
+            valores da variável de controle que sejam múltiplos de 7.
         */
+
+        for(let i = 3; i <= 1000; i += 3) {
+            if(i % 7 == 0) {
+                document.write(i + '<br>')
+            }
+        }
 
     </script>
 </head>
