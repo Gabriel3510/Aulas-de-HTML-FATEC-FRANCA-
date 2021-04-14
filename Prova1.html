@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova 1</title>
+    <script>
+        // Ativa verificações adicionais de variáveis
+        // Modo "Chato" do JavaScrpit
+        'use strict'
+        /* 2)Declare uma função que não recebe argumento. 
+        Dentro dela, usando um loop for, imprimacom  document.write()  
+        a lista dos quilômetros em que havará estações de embarque edesembarque, 
+        no sentido Franca – São Paulo, lembrando que o km 1 fica em São Paulo e okm 400, 
+        em Franca. Essa função não deverá ter valor de retorno.3)Obtenha do usuário um 
+        número de quilômetro. Valide a entrada do usuário, repetindo apergunta até que ele 
+        informe um número válido e que esteja entre 1 e 400 (inclusive).4)Utilizando a estrutura  
+        switch, verifique se o quilômetro informado pelo usuário possuialguma das comodidades disponíveis ao 
+        longo da linha e, se for o caso, exiba-a  usandoalert(). Se não houver nada no quilômetro, exiba'Nada aqui.'.
+        5)Efetue a chamada à função declarada em 2) para exibir os quilômetros com estações.6)Ao terminar, faça o  
+        download  do arquivo  Prova1.html  e envie-o conforme descrito nasInstruções Gerais.
+        */
+        function km1(){
+        for(let kmida = 400; kmida >= 1; kmida--){
+            if(kmida % 50 === 0){
+                document.write('Posto de embarque e desembarque: ' + kmida +' km<br>')
+            }
+        }
+        }
+        let km
+        do{
+          km = parseInt(prompt('Digite o Km de Embarque: (De 1 a 400)'))
+        } while (isNaN(km)|| (km < 1 || km > 400))
+        switch(km){
+            case 98:
+            case 190:
+            case 283:
+            case 379:
+                alert('Postos de conveniência da Rede Mil Grau ' + km + ' km')
+                document.write('Postos de conveniência da Rede Mil Grau ' + km + ' km<br>')
+                break
+            case 155:
+            case 355:
+                alert('Postos da Polícia Ferroviária ' + km + ' km')
+                document.write('Postos da Polícia Ferroviária ' + km + ' km<br>')
+                break
+            case 137:
+                alert('Aeroporto Interplanetário de Virapratos ' + km + ' km')
+                document.write('Aeroporto Interplanetário de Virapratos ' + km + ' km<br>')
+                break
+            case 204:
+                alert('Hotel Cacique Internacional 6 estrelas ' + km + ' km')
+                document.write('Hotel Cacique Internacional 6 estrelas ' + km + ' km<br>')
+                break
+            case 311:
+                alert('Boleli shopping center ' + km + ' km')
+                document.write('Boleli shopping center ' + km + ' km<br>')
+                break
+            case 356:
+                alert('Acesso ao Acqua Park Unidade III ' + km + ' km')
+                document.write('Acesso ao Acqua Park Unidade III ' + km + ' km<br>')
+                break
+            default:
+                alert('Nada aqui no ' + km + ' km')       
+        }
+        km1()
+    </script>
+</head>
+<body>
+     
+</body>
+</html>
